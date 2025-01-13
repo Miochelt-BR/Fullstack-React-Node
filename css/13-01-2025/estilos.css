@@ -1,0 +1,13 @@
+
+ul {
+  background-color: gray;
+}
+
+ul li {
+  color: red;
+}
+
+button {
+  background-color: yellow;
+  color: black;
+}
