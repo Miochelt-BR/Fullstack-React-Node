@@ -7,13 +7,13 @@
   text-align: center;
 }
 
-/* Texto neon */
+
 .neon-text {
   color: #0ff;
   text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #00f;
 }
 
-/* Botão neon */
+
 .btn-neon {
   background: rgb(103, 25, 139);
   color: #000;
@@ -30,23 +30,23 @@
   box-shadow: 0 0 40px rgb(105, 21, 126);
 }
 
-/* Carrossel estilizado */
+
 .carousel-inner img {
   width: 100%;
-  height: 400px; /* Ajuste conforme necessário */
+  height: 400px; 
   object-fit: cover;
   border-radius: 10px;
 }
 
-/* Cards de jogos */
+
 .game-card {
   background: #000000;
   color: white;
   border: 1px solid #0ff;
   box-shadow: 0 0 10px #0ff;
   transition: box-shadow 0.3s ease-in-out;
-  margin: 20px; /* Afastamento entre os cards */
-  border-radius: 10px; /* Para manter a borda arredondada */
+  margin: 20px; 
+  border-radius: 10px; 
 }
 
 .game-card:hover {
@@ -55,13 +55,12 @@
 
 .game-card img {
   width: 100%;
-  height: 200px; /* Ajuste conforme necessário */
+  height: 200px;
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-/* Ajuste geral */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #121212;
