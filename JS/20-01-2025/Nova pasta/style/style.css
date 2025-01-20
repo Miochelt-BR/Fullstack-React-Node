@@ -1,0 +1,90 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  background-color: #0a0a0a; /* Preto mais escuro */
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif; /* Fonte futurista */
+  text-align: center;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+/* Seções */
+section {
+  background: rgba(20, 20, 20, 0.9);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+}
+
+/* Títulos */
+h1, h2 {
+  text-shadow: 0 0 10px cyan;
+  color: cyan;
+}
+
+/* Rodapé */
+footer {
+  margin-top: 20px;
+  padding: 15px;
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+/* Animação de brilho no texto */
+@keyframes neon-glow {
+  0% { text-shadow: 0 0 5px cyan, 0 0 10px cyan; }
+  50% { text-shadow: 0 0 15px cyan, 0 0 30px cyan; }
+  100% { text-shadow: 0 0 5px cyan, 0 0 10px cyan; }
+}
+
+/* Aplicando efeito de brilho */
+h1, h2 {
+  animation: neon-glow 1.5s infinite alternate;
+}
+
+/* Estilizando links */
+a {
+  color: cyan;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: white;
+}
+
+/* Efeito para o fundo */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.1), transparent);
+  z-index: -1;
+}
