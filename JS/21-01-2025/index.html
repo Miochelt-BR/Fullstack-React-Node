@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caderno de Exercícios - Futurista</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Caderno de Exercícios 🧠</h1>
+
+    <div class="exercise">
+      <h2>1️⃣ Maior Número</h2>
+      <input type="number" id="numA" placeholder="Número A">
+      <input type="number" id="numB" placeholder="Número B">
+      <input type="number" id="numC" placeholder="Número C">
+      <button onclick="maiorNumero()">Verificar</button>
+      <p id="resultado1"></p>
+    </div>
+
+    <div class="exercise">
+      <h2>2️⃣ Triângulo Válido?</h2>
+      <input type="number" id="lado1" placeholder="Lado 1">
+      <input type="number" id="lado2" placeholder="Lado 2">
+      <input type="number" id="lado3" placeholder="Lado 3">
+      <button onclick="verificaTriangulo()">Verificar</button>
+      <p id="resultado2"></p>
+    </div>
+
+    <div class="exercise">
+      <h2>3️⃣ Idade Válida?</h2>
+      <input type="number" id="idade" placeholder="Idade">
+      <button onclick="verificaIdade()">Verificar</button>
+      <p id="resultado3"></p>
+    </div>
+
+    <div class="exercise">
+      <h2>4️⃣ Nome do Mês</h2>
+      <input type="number" id="mes" placeholder="Número do Mês (1-12)">
+      <button onclick="verificaMes()">Verificar</button>
+      <p id="resultado4"></p>
+    </div>
+
+    <div class="exercise">
+      <h2>5️⃣ Vogal ou Consoante?</h2>
+      <input type="text" id="letra" placeholder="Digite uma letra">
+      <button onclick="verificaLetra()">Verificar</button>
+      <p id="resultado5"></p>
+    </div>
+
+    <div class="exercise">
+      <h2>6️⃣ Média do Aluno</h2>
+      <input type="number" id="nota1" placeholder="Nota 1">
+      <input type="number" id="nota2" placeholder="Nota 2">
+      <button onclick="calculaMedia()">Calcular</button>
+      <p id="resultado6"></p>
+    </div>
+
+    <div class="exercise">
+      <h2>7️⃣ Turno de Estudo</h2>
+      <input type="text" id="turno" placeholder="M, V ou N">
+      <button onclick="verificaTurno()">Verificar</button>
+      <p id="resultado7"></p>
+    </div>
+
+    <div class="exercise">
+      <h2>8️⃣ Estação do Ano</h2>
+      <input type="number" id="estacao" placeholder="Número (1-4)">
+      <button onclick="verificaEstacao()">Verificar</button>
+      <p id="resultado8"></p>
+    </div>
+
+    <div class="exercise">
+      <h2>9️⃣ Menção da Nota</h2>
+      <input type="number" id="notaMen" placeholder="Nota (0-10)">
+      <button onclick="verificaNota()">Verificar</button>
+      <p id="resultado9"></p>
+    </div>
+
+    <div class="exercise">
+      <h2>🔟 Reajuste Salarial</h2>
+      <input type="number" id="salario" placeholder="Salário Atual">
+      <button onclick="calculaReajuste()">Calcular</button>
+      <p id="resultado10"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
