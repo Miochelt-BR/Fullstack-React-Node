@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: #00ff00;
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ff00;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    text-shadow: 0 0 10px #00ff00;
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: matrixGlow 1.5s infinite alternate;
+}
+
+button {
+    background-color: black;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Share Tech Mono', monospace;
+    cursor: pointer;
+    margin-top: 10px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #00ff00;
+    color: black;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+#loading-container {
+    width: 100%;
+    height: 20px;
+    background: rgba(0, 255, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 10px;
+    display: none;
+    overflow: hidden;
+    position: relative;
+}
+
+#loading-bar {
+    width: 0;
+    height: 100%;
+    background-color: #00ff00;
+    border-radius: 5px;
+    animation: loadingAnimation 2s linear infinite;
+}
+
+#matrix-code {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    font-family: 'Share Tech Mono', monospace;
+    color: #00ff00;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0.7;
+    animation: matrixEffect 2s linear infinite;
+}
+
+pre {
+    text-align: left;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    box-shadow: 0 0 10px #00ff00;
+    font-size: 14px;
+    height: 250px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+}
+
+@keyframes matrixGlow {
+    0% { text-shadow: 0 0 5px #00ff00; }
+    50% { text-shadow: 0 0 20px #00ff00; }
+    100% { text-shadow: 0 0 5px #00ff00; }
+}
+
+@keyframes loadingAnimation {
+    0% { width: 0; }
+    50% { width: 50%; }
+    100% { width: 100%; }
+}
+
+@keyframes matrixEffect {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+}
