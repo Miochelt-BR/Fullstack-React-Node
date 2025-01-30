@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade DOM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Exemplo 1: Alterar texto -->
+  <div id="textoDiv">Texto original</div>
+  <button onclick="alterarTexto()">Alterar Texto</button>
+
+  <!-- Exemplo 2: Alterar estilo do parágrafo -->
+  <p id="paragrafo">Este é um parágrafo.</p>
+  <button onclick="alterarParagrafo()">Alterar Parágrafo</button>
+
+  <!-- Exemplo 3: Adicionar item à lista -->
+  <ul id="minhaLista">
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ul>
+  <button onclick="adicionarItem()">Adicionar Item</button>
+
+  <!-- Exemplo 4: Remover linha da tabela -->
+  <table id="minhaTabela" border="1">
+    <tr>
+      <td>Linha 1</td>
+    </tr>
+    <tr>
+      <td>Linha 2</td>
+    </tr>
+    <tr>
+      <td>Linha 3</td>
+    </tr>
+  </table>
+  <button onclick="removerLinha()">Remover Linha</button>
+
+  <!-- Exemplo 5: Mostrar/Ocultar imagem -->
+  <img id="minhaImagem" src="imagem.jpg" alt="Imagem" style="display: block;">
+  <button onclick="mostrarImagem()">Mostrar</button>
+  <button onclick="ocultarImagem()">Ocultar</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

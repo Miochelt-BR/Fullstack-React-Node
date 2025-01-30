@@ -1,0 +1,93 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilizando botões */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Caixa de texto (Exemplo 1) */
+#textoDiv {
+  font-size: 18px;
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px auto;
+  display: inline-block;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Parágrafo estilizado (Exemplo 2) */
+p {
+  font-size: 18px;
+  padding: 10px;
+  background: white;
+  border-radius: 5px;
+  width: fit-content;
+  margin: 10px auto;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista (Exemplo 3) */
+ul {
+  list-style: none;
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  display: inline-block;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+li {
+  background: #e0e0e0;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 3px;
+}
+
+/* Tabela (Exemplo 4) */
+table {
+  margin: 10px auto;
+  background: white;
+  border-collapse: collapse;
+  width: 300px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Imagem (Exemplo 5) */
+img {
+  width: 200px;
+  margin: 10px;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
