@@ -1,0 +1,131 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  text-align: center;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Título */
+h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Caixa de entrada */
+input {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  outline: none;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #ffeb3b;
+  box-shadow: 0 0 10px #ffeb3b;
+}
+
+/* Botão estilizado */
+button {
+  background: #ffeb3b;
+  color: #333;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.3s, background 0.3s;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #ffc107;
+  transform: scale(1.1);
+}
+
+/* Lista de cidades */
+ul {
+  list-style: none;
+  margin-top: 20px;
+  max-width: 320px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  max-height: 250px;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* Estilo dos itens da lista */
+li {
+  padding: 12px;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  margin: 5px 0;
+  transition: 0.3s;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+li:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+li:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Animação de entrada dos itens da lista */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Efeito para exibir os itens um a um */
+li {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+li:nth-child(1) { animation-delay: 0.1s; }
+li:nth-child(2) { animation-delay: 0.2s; }
+li:nth-child(3) { animation-delay: 0.3s; }
+li:nth-child(4) { animation-delay: 0.4s; }
+li:nth-child(5) { animation-delay: 0.5s; }
